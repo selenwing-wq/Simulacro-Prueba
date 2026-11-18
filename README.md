@@ -82,3 +82,15 @@ Proyecto académico desarrollado como parte del proceso de formación en RIWI.
 - Aplicación de background-position: center.
 - Adaptación responsive del Hero.
 
+### Etapa 4 - Sección de servicios
+
+- Creación de la sección de servicios.
+- Implementación de cuatro tarjetas con article.
+- Integración de iconos de Material Symbols.
+- Aplicación de colores diferenciados para cada servicio.
+- Organización de tarjetas mediante Flexbox.
+- Uso de flex-wrap y gap.
+- Implementación de flex-basis mediante la propiedad flex.
+- Adaptación responsive para escritorio, tablet y móvil.
+- Aplicación de estilos reutilizables mediante clases CSS.
+

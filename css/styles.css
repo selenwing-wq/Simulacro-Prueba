@@ -239,12 +239,155 @@ a {
     border-radius: 7px;
 
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 
 /* ========================================
-   10. RESPONSIVE DEL HERO
+   10. SECCION DE SERVICIOS
+======================================== */
+
+.servicios {
+    width: 100%;
+    padding: 30px 35px 40px;
+
+    background-color: var(--color-fondo);
+}
+
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+/* ========================================
+   11. TARJETAS DE SERVICIOS
+======================================== */
+
+.tarjeta-servicio {
+    flex: 1 1 calc(25% - 11px);
+    min-width: 0;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 20px 12px;
+
+    background-color: var(--color-blanco);
+    border: 1px solid rgb(233, 226, 216);
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   12. ICONOS DE SERVICIOS
+======================================== */
+
+.icono-servicio {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.icono-servicio .material-symbols-outlined {
+    font-size: 21px;
+}
+
+.icono-terracota {
+    background-color: rgb(247, 232, 225);
+    color: rgb(184, 92, 56);
+}
+
+.icono-ocre {
+    background-color: rgb(250, 240, 222);
+    color: rgb(196, 134, 52);
+}
+
+.icono-salvia {
+    background-color: rgb(232, 240, 230);
+    color: rgb(90, 114, 85);
+}
+
+.icono-cobre {
+    background-color: rgb(243, 233, 228);
+    color: rgb(142, 74, 49);
+}
+
+
+/* ========================================
+   13. TEXTO DE LAS TARJETAS
+======================================== */
+
+.tarjeta-servicio h3 {
+    font-family: var(--fuente-principal);
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.tarjeta-servicio p {
+    color: rgb(105, 95, 87);
+
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   14. RESPONSIVE DE SERVICIOS
+======================================== */
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+
+    .tarjeta-servicio {
+        flex-basis: calc(50% - 7px);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .servicios {
+        padding: 20px 12px 30px;
+    }
+
+    .servicios-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .tarjeta-servicio {
+        width: 100%;
+        min-height: 130px;
+        padding: 17px 12px;
+    }
+
+    .tarjeta-servicio h3 {
+        font-size: 13px;
+    }
+
+    .tarjeta-servicio p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ========================================
+   15. RESPONSIVE DEL HERO
 ======================================== */
 
 @media screen and (max-width: 700px) {
