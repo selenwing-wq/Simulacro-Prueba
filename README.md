@@ -45,3 +45,28 @@ El desarrollo se realizará únicamente con HTML5 y CSS3, sin JavaScript ni pseu
 
 Proyecto académico desarrollado como parte del proceso de formación en RIWI.
 
+## Bitácora de desarrollo
+
+### Etapa 1 - Preparación del proyecto
+- Creación de la estructura de carpetas.
+- Creación de index.html.
+- Creación de css/styles.css.
+- Creación del README.
+- Inicialización del repositorio Git.
+- Configuración de identidad de GitHub.
+- Publicación del proyecto en GitHub.
+
+### Etapa 2 - Estructura HTML y navegación
+- Configuración del documento HTML5.
+- Configuración del idioma español.
+- Configuración de metadatos y viewport.
+- Integración de Google Fonts.
+- Integración de Google Material Symbols.
+- Creación del encabezado semántico.
+- Creación del menú de navegación.
+- Creación de la estructura principal.
+- Definición de variables CSS.
+- Implementación de Flexbox.
+- Primera adaptación responsive mediante media queries.
+- Navegación horizontal en escritorio y vertical en móvil.
+

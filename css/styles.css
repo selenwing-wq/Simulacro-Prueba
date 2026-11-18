@@ -1,0 +1,239 @@
+
+/* ========================================
+   1. VARIABLES GLOBALES
+======================================== */
+
+:root {
+    --color-fondo: rgb(248, 245, 240);
+    --color-arena: rgb(239, 233, 224);
+    --color-blanco: rgb(255, 255, 255);
+
+    --color-espresso: rgb(34, 30, 28);
+    --color-carbon: rgb(48, 43, 40);
+
+    --color-terracota: rgb(184, 92, 56);
+    --color-arcilla: rgb(142, 64, 36);
+
+    --color-texto: rgb(34, 30, 28);
+    --color-parrafo: rgb(92, 83, 76);
+    --color-texto-claro: rgb(235, 228, 218);
+
+    --color-borde: rgb(228, 220, 209);
+
+    --fuente-titulos: 'Fraunces', serif;
+    --fuente-principal: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/* ========================================
+   2. CONFIGURACION GENERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================================
+   3. ENCABEZADO
+======================================== */
+
+.encabezado {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+
+/* ========================================
+   4. MARCA Y LOGOTIPO
+======================================== */
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.icono-marca {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-terracota);
+    color: var(--color-blanco);
+
+    border-radius: 7px;
+    font-size: 19px;
+}
+
+.nombre-marca {
+    font-family: var(--fuente-titulos);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   5. NAVEGACION
+======================================== */
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.enlace {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--color-parrafo);
+    font-size: 11px;
+    font-weight: 600;
+
+    padding: 10px 0;
+}
+
+.enlace .material-symbols-outlined {
+    font-size: 15px;
+}
+
+.enlace.activo {
+    color: var(--color-terracota);
+    border-bottom: 2px solid var(--color-terracota);
+}
+
+
+/* ========================================
+   6. CONTENIDO TEMPORAL
+======================================== */
+
+.contenido {
+    width: 100%;
+    min-height: 400px;
+    padding: 50px 35px;
+}
+
+.bienvenida {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    color: var(--color-parrafo);
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   7. RESPONSIVE
+======================================== */
+
+@media screen and (max-width: 700px) {
+
+    .encabezado {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 76px;
+        height: 100vh;
+
+        padding: 15px 8px;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 35px;
+
+        background-color: var(--color-espresso);
+        border-bottom: none;
+    }
+
+    .marca {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .nombre-marca {
+        color: var(--color-texto-claro);
+        font-size: 10px;
+    }
+
+    .navegacion {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 7px;
+    }
+
+    .enlace {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+
+        padding: 9px 2px;
+
+        color: var(--color-texto-claro);
+        font-size: 9px;
+    }
+
+    .enlace .material-symbols-outlined {
+        font-size: 17px;
+    }
+
+    .enlace.activo {
+        background-color: var(--color-terracota);
+        color: var(--color-blanco);
+        border-bottom: none;
+        border-radius: 5px;
+    }
+
+    .contenido {
+        margin-left: 76px;
+        width: calc(100% - 76px);
+        padding: 35px 15px;
+    }
+
+    .bienvenida h1 {
+        font-size: 25px;
+    }
+
+}
