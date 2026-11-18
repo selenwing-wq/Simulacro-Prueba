@@ -70,3 +70,15 @@ Proyecto académico desarrollado como parte del proceso de formación en RIWI.
 - Primera adaptación responsive mediante media queries.
 - Navegación horizontal en escritorio y vertical en móvil.
 
+### Etapa 3 - Hero principal
+
+- Reemplazo del contenido temporal de bienvenida.
+- Creación de la sección Hero.
+- Implementación de títulos y descripción.
+- Integración de fotografía de Unsplash.
+- Implementación de degradado con linear-gradient().
+- Creación del botón principal.
+- Aplicación de background-size: cover.
+- Aplicación de background-position: center.
+- Adaptación responsive del Hero.
+

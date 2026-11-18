@@ -134,106 +134,155 @@ a {
 }
 
 
+
 /* ========================================
-   6. CONTENIDO TEMPORAL
+   6. CONTENIDO PRINCIPAL
 ======================================== */
 
 .contenido {
     width: 100%;
-    min-height: 400px;
-    padding: 50px 35px;
-}
-
-.bienvenida {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.bienvenida h1 {
-    font-family: var(--fuente-titulos);
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.bienvenida p {
-    color: var(--color-parrafo);
-    line-height: 1.7;
+    padding: 0;
 }
 
 
 /* ========================================
-   7. RESPONSIVE
+   7. HERO PRINCIPAL
+======================================== */
+
+.hero {
+    width: 100%;
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(248, 245, 240, 0.98) 0%,
+            rgba(248, 245, 240, 0.88) 32%,
+            rgba(248, 245, 240, 0.15) 75%
+        ),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ========================================
+   8. TEXTO DEL HERO
+======================================== */
+
+.hero-contenido {
+    width: 48%;
+    max-width: 480px;
+}
+
+.hero-etiqueta {
+    display: inline-block;
+
+    padding: 7px 10px;
+    margin-bottom: 12px;
+
+    background-color: rgb(247, 232, 225);
+    color: var(--color-terracota);
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.hero-contenido h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.hero-contenido h2 {
+    font-family: var(--fuente-principal);
+    font-size: 17px;
+    font-weight: 600;
+
+    color: rgb(58, 49, 44);
+
+    margin-bottom: 12px;
+}
+
+.hero-descripcion {
+    color: var(--color-parrafo);
+
+    font-size: 12px;
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   9. BOTON PRINCIPAL
+======================================== */
+
+.boton-principal {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: var(--color-terracota);
+    color: var(--color-blanco);
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   10. RESPONSIVE DEL HERO
 ======================================== */
 
 @media screen and (max-width: 700px) {
 
-    .encabezado {
-        position: fixed;
-        top: 0;
-        left: 0;
+    .hero {
+        min-height: 480px;
 
-        width: 76px;
-        height: 100vh;
+        padding: 30px 20px;
 
-        padding: 15px 8px;
+        align-items: flex-start;
 
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 35px;
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(248, 245, 240, 0.98) 0%,
+                rgba(248, 245, 240, 0.88) 40%,
+                rgba(248, 245, 240, 0.15) 100%
+            ),
+            url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80");
 
-        background-color: var(--color-espresso);
-        border-bottom: none;
+        background-position: center;
     }
 
-    .marca {
-        flex-direction: column;
-        gap: 5px;
-        text-align: center;
-    }
-
-    .nombre-marca {
-        color: var(--color-texto-claro);
-        font-size: 10px;
-    }
-
-    .navegacion {
+    .hero-contenido {
         width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 7px;
+        max-width: 100%;
     }
 
-    .enlace {
-        flex-direction: column;
-        justify-content: center;
-        gap: 4px;
-
-        padding: 9px 2px;
-
-        color: var(--color-texto-claro);
-        font-size: 9px;
+    .hero-contenido h1 {
+        font-size: 32px;
     }
 
-    .enlace .material-symbols-outlined {
-        font-size: 17px;
+    .hero-contenido h2 {
+        font-size: 15px;
     }
 
-    .enlace.activo {
-        background-color: var(--color-terracota);
-        color: var(--color-blanco);
-        border-bottom: none;
-        border-radius: 5px;
-    }
-
-    .contenido {
-        margin-left: 76px;
-        width: calc(100% - 76px);
-        padding: 35px 15px;
-    }
-
-    .bienvenida h1 {
-        font-size: 25px;
+    .hero-descripcion {
+        font-size: 11px;
     }
 
 }
