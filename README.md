@@ -94,3 +94,23 @@ Proyecto académico desarrollado como parte del proceso de formación en RIWI.
 - Adaptación responsive para escritorio, tablet y móvil.
 - Aplicación de estilos reutilizables mediante clases CSS.
 
+### Etapa 5 - Sección Nosotros
+
+- Creación de la sección Nosotros.
+- Implementación de contenido informativo.
+- Uso de etiquetas strong y span.
+- Creación de estadísticas.
+- Integración de imagen mediante img.
+- Uso de los atributos src y alt.
+- Distribución de columnas mediante Flexbox.
+- Implementación de object-fit: cover.
+- Adaptación responsive para dispositivos móviles.
+
+### Organización del CSS
+
+- Reorganización de los apartados CSS.
+- Separación de estilos generales y responsive.
+- Agrupación de media queries.
+- Organización de estilos para escritorio, tablet y móvil.
+- Numeración consecutiva de los apartados.
+
